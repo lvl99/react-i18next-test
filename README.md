@@ -38,7 +38,7 @@ For this repo, I created dummy `intl` and `t` functions using a [custom HOC](/sr
 - [ ] Since the custom HOC only outputs the translation key as-is, ensure to test that passed values are correct and can/will be interpolated
 - [ ] See how custom HOC interacts with async components (using `React.Suspense`)
 
-# MIT License
+## MIT License
 
 Copyright 2019 Matt Scheurich.
 
