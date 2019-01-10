@@ -1,68 +1,48 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# `react-i18next` Test
 
-## Available Scripts
+Simple test to see how `react-i18next` differs from `react-intl`.
 
-In the project directory, you can run:
+## Explanation
 
-### `npm start`
+I've used `react-intl` previously, but found it a hassle dealing with when testing in Jest.
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+I also like the async translation files that `react-i18next` has built it. Makes it leaner for building, needing only to update the translation file itself and not generate a whole new build.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+The [`configuration`](/src/i18n/index.js) uses a couple extra packages:
 
-### `npm test`
+- `i18next-icu` to utilise the `yahoo/intl-messageformat` for translation strings (this means there's no React component interpolation within strings, which `react-i18next` does allow)
+- `i18next-xhr-backend` to load translation files asynchronously
+- `i18next-browser-languagedetector` to automatically load translations based on the browser's configuration
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Layout
 
-### `npm run build`
+The implementation configuration is located in the [`src/i18n`](/src/i18n) folder:
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- [`src/i18n/index.js`](/src/i18n/index.js) is the `react-i18next` configuration
+- [`src/i18n/testI18nComponent.js`](/src/i18n/testI18nComponent.js) is a custom HOC to stub `react-i18next` functionality when testing components.
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+Translation files are located in the [`public/locales`](/public/locales) folder. It's important to note that the supported locales/languages need to be folders. The containing files should be named (the default name is `translation`) in a way which applies to using namespaces in `react-i18next` (since it's using the default I don't specify in the namespace when using `withNamespaces` or the `NamespaceConsumer` HOC).
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Testing concerns
 
-### `npm run eject`
+When I previously used `react-intl` I found it difficult to test in Jest. There ended up being a lot of tight coupling between Components, translations and the `react-intl` which made snapshots very verbose.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Since `react-i18next` does not need to inject the full locale translations into the component, this already reduces the size of snapshots.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+For this repo, I created dummy `intl` and `t` functions using a [custom HOC](/src/i18n/testI18nComponent.js) which can be optionally wrapped around a Component within the test file. See [`App.test.js`](/src/App.test.js) for how it works.
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### Further investigations / To-dos
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- [ ] Since the custom HOC only outputs the translation key as-is, ensure to test that passed values are correct and can/will be interpolated
+- [ ] Test for other potential properties that might impact a Component that relies on `react-i18next` functionality (e.g. `intl`, `tReady`)
+- [ ] See how custom HOC interacts with async components (using `React.Suspense`)
 
-## Learn More
+# MIT License
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Copyright 2019, Matt Scheurich.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
-### Code Splitting
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
