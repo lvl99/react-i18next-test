@@ -6,11 +6,11 @@ Simple test to see how `react-i18next` differs from `react-intl`.
 
 I've used `react-intl` previously, but found it a hassle dealing with when testing in Jest.
 
-I also like the async translation files that `react-i18next` has built it. Makes it leaner for building, needing only to update the translation file itself and not generate a whole new build.
+I also like the async translation files that `react-i18next` has built in. Makes it leaner for building, needing only to update the translation file itself and not generate a whole new build.
 
-The [`configuration`](/src/i18n/index.js) uses a couple extra packages:
+The [configuration](/src/i18n/index.js) uses a couple extra packages:
 
-- `i18next-icu` to utilise the `yahoo/intl-messageformat` for translation strings (this means there's no React component interpolation within strings, which `react-i18next` does allow)
+- `i18next-icu` to utilise the `yahoo/intl-messageformat` for translation strings (this means there's no React component interpolation within strings, which `react-i18next` does allow. All my app's existing translations are in this format)
 - `i18next-xhr-backend` to load translation files asynchronously
 - `i18next-browser-languagedetector` to automatically load translations based on the browser's configuration
 
