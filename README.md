@@ -21,7 +21,7 @@ The implementation configuration is located in the [`src/i18n`](/src/i18n) folde
 - [`src/i18n/index.js`](/src/i18n/index.js) is the `react-i18next` configuration
 - [`src/i18n/testI18nComponent.js`](/src/i18n/testI18nComponent.js) is a custom HOC to stub `react-i18next` functionality when testing components.
 
-Translation files are located in the [`public/locales`](/public/locales) folder. It's important to note that the supported locales/languages need to be folders. The containing files should be named (the default name is `translation`) in a way which applies to using namespaces in `react-i18next` (since it's using the default I don't specify in the namespace when using `withNamespaces` or the `NamespaceConsumer` HOC).
+Translation files are located in the [`public/locales`](/public/locales) folder. It's important to note that the supported locales/languages need to be folders. The containing files should be named (the default name is `translation`) in a way which applies to using namespaces in `react-i18next` (since it's using the default I don't specify in the namespace when using `withNamespaces` or the `NamespaceConsumer` HOC). This tripped me up when I was initially starting out.
 
 ### Testing concerns
 
