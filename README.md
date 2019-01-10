@@ -33,8 +33,9 @@ For this repo, I created dummy `intl` and `t` functions using a [custom HOC](/sr
 
 ### Further investigations / To-dos
 
+- [ ] Test for other potential properties that might impact a Component that relies on `react-i18next` functionality (e.g. `intl.changeLanguage`, `tReady`)
+- [ ] Test if nested components that rely on `intl` and `t` functions can operate correctly within tests
 - [ ] Since the custom HOC only outputs the translation key as-is, ensure to test that passed values are correct and can/will be interpolated
-- [ ] Test for other potential properties that might impact a Component that relies on `react-i18next` functionality (e.g. `intl`, `tReady`)
 - [ ] See how custom HOC interacts with async components (using `React.Suspense`)
 
 # MIT License
