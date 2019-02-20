@@ -17,6 +17,7 @@ export default function Changer({ language }) {
   return (
     <>
       <h3>{t("this.is.a.test", { name: "Test", lng })}</h3>
+      <h4>{t("this.is.another.test", { name: "Test", lng })}</h4>
       <p>
         Current component language: {lng}
         <br />

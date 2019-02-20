@@ -44,6 +44,28 @@ ReactWrapper {
             <h1>
               welcome.toReact
             </h1>
+            <p>
+              App language: 
+              <br />
+              i18n currentLanguage: 
+            </p>
+            <button>
+              Language: EN
+            </button>
+            <button>
+              Language: FR
+            </button>
+            <h3>
+              this.is.a.test
+            </h3>
+            <h4>
+              this.is.another.test
+            </h4>
+            <p>
+              Current component language: 
+              <br />
+              i18n currentLanguage: 
+            </p>
             <button>
               Language: EN
             </button>
@@ -66,6 +88,11 @@ ReactWrapper {
             <h1>
               welcome.toReact
             </h1>
+            <p>
+              App language: 
+              <br />
+              i18n currentLanguage: 
+            </p>
             <button
               onClick={[Function]}
             >
@@ -76,6 +103,7 @@ ReactWrapper {
             >
               Language: FR
             </button>
+            <Changer />
           </header>,
           "className": "App",
         },
@@ -93,6 +121,28 @@ ReactWrapper {
               <h1>
                 welcome.toReact
               </h1>
+              <p>
+                App language: 
+                <br />
+                i18n currentLanguage: 
+              </p>
+              <button>
+                Language: EN
+              </button>
+              <button>
+                Language: FR
+              </button>
+              <h3>
+                this.is.a.test
+              </h3>
+              <h4>
+                this.is.another.test
+              </h4>
+              <p>
+                Current component language: 
+                <br />
+                i18n currentLanguage: 
+              </p>
               <button>
                 Language: EN
               </button>
@@ -112,6 +162,11 @@ ReactWrapper {
                 <h1>
                   welcome.toReact
                 </h1>,
+                <p>
+                  App language: 
+                  <br />
+                  i18n currentLanguage: 
+                </p>,
                 <button
                   onClick={[Function]}
                 >
@@ -122,6 +177,7 @@ ReactWrapper {
                 >
                   Language: FR
                 </button>,
+                <Changer />,
               ],
               "className": "App-header",
             },
@@ -162,6 +218,41 @@ ReactWrapper {
                 "type": "h1",
               },
               Object {
+                "instance": <p>
+                  App language: 
+                  <br />
+                  i18n currentLanguage: 
+                </p>,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "App language: ",
+                    undefined,
+                    <br />,
+                    "i18n currentLanguage: ",
+                    undefined,
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  "App language: ",
+                  Object {
+                    "instance": <br />,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {},
+                    "ref": null,
+                    "rendered": Array [
+                      undefined,
+                    ],
+                    "type": "br",
+                  },
+                  "i18n currentLanguage: ",
+                ],
+                "type": "p",
+              },
+              Object {
                 "instance": <button>
                   Language: EN
                 </button>,
@@ -192,6 +283,115 @@ ReactWrapper {
                   "Language: FR",
                 ],
                 "type": "button",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "language": undefined,
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": <h3>
+                      this.is.a.test
+                    </h3>,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "this.is.a.test",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      "this.is.a.test",
+                    ],
+                    "type": "h3",
+                  },
+                  Object {
+                    "instance": <h4>
+                      this.is.another.test
+                    </h4>,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "this.is.another.test",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      "this.is.another.test",
+                    ],
+                    "type": "h4",
+                  },
+                  Object {
+                    "instance": <p>
+                      Current component language: 
+                      <br />
+                      i18n currentLanguage: 
+                    </p>,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        "Current component language: ",
+                        undefined,
+                        <br />,
+                        "i18n currentLanguage: ",
+                        undefined,
+                      ],
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      "Current component language: ",
+                      Object {
+                        "instance": <br />,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {},
+                        "ref": null,
+                        "rendered": Array [
+                          undefined,
+                        ],
+                        "type": "br",
+                      },
+                      "i18n currentLanguage: ",
+                    ],
+                    "type": "p",
+                  },
+                  Object {
+                    "instance": <button>
+                      Language: EN
+                    </button>,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Language: EN",
+                      "onClick": [Function],
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      "Language: EN",
+                    ],
+                    "type": "button",
+                  },
+                  Object {
+                    "instance": <button>
+                      Language: FR
+                    </button>,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Language: FR",
+                      "onClick": [Function],
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      "Language: FR",
+                    ],
+                    "type": "button",
+                  },
+                ],
+                "type": [Function],
               },
             ],
             "type": "header",
@@ -236,6 +436,28 @@ ReactWrapper {
               <h1>
                 welcome.toReact
               </h1>
+              <p>
+                App language: 
+                <br />
+                i18n currentLanguage: 
+              </p>
+              <button>
+                Language: EN
+              </button>
+              <button>
+                Language: FR
+              </button>
+              <h3>
+                this.is.a.test
+              </h3>
+              <h4>
+                this.is.another.test
+              </h4>
+              <p>
+                Current component language: 
+                <br />
+                i18n currentLanguage: 
+              </p>
               <button>
                 Language: EN
               </button>
@@ -258,6 +480,11 @@ ReactWrapper {
               <h1>
                 welcome.toReact
               </h1>
+              <p>
+                App language: 
+                <br />
+                i18n currentLanguage: 
+              </p>
               <button
                 onClick={[Function]}
               >
@@ -268,6 +495,7 @@ ReactWrapper {
               >
                 Language: FR
               </button>
+              <Changer />
             </header>,
             "className": "App",
           },
@@ -285,6 +513,28 @@ ReactWrapper {
                 <h1>
                   welcome.toReact
                 </h1>
+                <p>
+                  App language: 
+                  <br />
+                  i18n currentLanguage: 
+                </p>
+                <button>
+                  Language: EN
+                </button>
+                <button>
+                  Language: FR
+                </button>
+                <h3>
+                  this.is.a.test
+                </h3>
+                <h4>
+                  this.is.another.test
+                </h4>
+                <p>
+                  Current component language: 
+                  <br />
+                  i18n currentLanguage: 
+                </p>
                 <button>
                   Language: EN
                 </button>
@@ -304,6 +554,11 @@ ReactWrapper {
                   <h1>
                     welcome.toReact
                   </h1>,
+                  <p>
+                    App language: 
+                    <br />
+                    i18n currentLanguage: 
+                  </p>,
                   <button
                     onClick={[Function]}
                   >
@@ -314,6 +569,7 @@ ReactWrapper {
                   >
                     Language: FR
                   </button>,
+                  <Changer />,
                 ],
                 "className": "App-header",
               },
@@ -354,6 +610,41 @@ ReactWrapper {
                   "type": "h1",
                 },
                 Object {
+                  "instance": <p>
+                    App language: 
+                    <br />
+                    i18n currentLanguage: 
+                  </p>,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "App language: ",
+                      undefined,
+                      <br />,
+                      "i18n currentLanguage: ",
+                      undefined,
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "App language: ",
+                    Object {
+                      "instance": <br />,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {},
+                      "ref": null,
+                      "rendered": Array [
+                        undefined,
+                      ],
+                      "type": "br",
+                    },
+                    "i18n currentLanguage: ",
+                  ],
+                  "type": "p",
+                },
+                Object {
                   "instance": <button>
                     Language: EN
                   </button>,
@@ -384,6 +675,115 @@ ReactWrapper {
                     "Language: FR",
                   ],
                   "type": "button",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "language": undefined,
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": <h3>
+                        this.is.a.test
+                      </h3>,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "this.is.a.test",
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        "this.is.a.test",
+                      ],
+                      "type": "h3",
+                    },
+                    Object {
+                      "instance": <h4>
+                        this.is.another.test
+                      </h4>,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "this.is.another.test",
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        "this.is.another.test",
+                      ],
+                      "type": "h4",
+                    },
+                    Object {
+                      "instance": <p>
+                        Current component language: 
+                        <br />
+                        i18n currentLanguage: 
+                      </p>,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          "Current component language: ",
+                          undefined,
+                          <br />,
+                          "i18n currentLanguage: ",
+                          undefined,
+                        ],
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        "Current component language: ",
+                        Object {
+                          "instance": <br />,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {},
+                          "ref": null,
+                          "rendered": Array [
+                            undefined,
+                          ],
+                          "type": "br",
+                        },
+                        "i18n currentLanguage: ",
+                      ],
+                      "type": "p",
+                    },
+                    Object {
+                      "instance": <button>
+                        Language: EN
+                      </button>,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Language: EN",
+                        "onClick": [Function],
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        "Language: EN",
+                      ],
+                      "type": "button",
+                    },
+                    Object {
+                      "instance": <button>
+                        Language: FR
+                      </button>,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Language: FR",
+                        "onClick": [Function],
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        "Language: FR",
+                      ],
+                      "type": "button",
+                    },
+                  ],
+                  "type": [Function],
                 },
               ],
               "type": "header",
