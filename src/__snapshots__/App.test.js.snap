@@ -44,21 +44,6 @@ ReactWrapper {
             <h1>
               welcome.toReact
             </h1>
-            <p>
-              Edit 
-              <code>
-                src/App.js
-              </code>
-               and save to reload.
-            </p>
-            <a
-              class="App-link"
-              href="https://reactjs.org"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              Learn React
-            </a>
             <button>
               Language: EN
             </button>
@@ -81,21 +66,6 @@ ReactWrapper {
             <h1>
               welcome.toReact
             </h1>
-            <p>
-              Edit 
-              <code>
-                src/App.js
-              </code>
-               and save to reload.
-            </p>
-            <a
-              className="App-link"
-              href="https://reactjs.org"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              Learn React
-            </a>
             <button
               onClick={[Function]}
             >
@@ -123,21 +93,6 @@ ReactWrapper {
               <h1>
                 welcome.toReact
               </h1>
-              <p>
-                Edit 
-                <code>
-                  src/App.js
-                </code>
-                 and save to reload.
-              </p>
-              <a
-                class="App-link"
-                href="https://reactjs.org"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                Learn React
-              </a>
               <button>
                 Language: EN
               </button>
@@ -157,21 +112,6 @@ ReactWrapper {
                 <h1>
                   welcome.toReact
                 </h1>,
-                <p>
-                  Edit 
-                  <code>
-                    src/App.js
-                  </code>
-                   and save to reload.
-                </p>,
-                <a
-                  className="App-link"
-                  href="https://reactjs.org"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
-                  Learn React
-                </a>,
                 <button
                   onClick={[Function]}
                 >
@@ -220,71 +160,6 @@ ReactWrapper {
                   "welcome.toReact",
                 ],
                 "type": "h1",
-              },
-              Object {
-                "instance": <p>
-                  Edit 
-                  <code>
-                    src/App.js
-                  </code>
-                   and save to reload.
-                </p>,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": Array [
-                    "Edit ",
-                    <code>
-                      src/App.js
-                    </code>,
-                    " and save to reload.",
-                  ],
-                },
-                "ref": null,
-                "rendered": Array [
-                  "Edit ",
-                  Object {
-                    "instance": <code>
-                      src/App.js
-                    </code>,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "children": "src/App.js",
-                    },
-                    "ref": null,
-                    "rendered": Array [
-                      "src/App.js",
-                    ],
-                    "type": "code",
-                  },
-                  " and save to reload.",
-                ],
-                "type": "p",
-              },
-              Object {
-                "instance": <a
-                  class="App-link"
-                  href="https://reactjs.org"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
-                  Learn React
-                </a>,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": "Learn React",
-                  "className": "App-link",
-                  "href": "https://reactjs.org",
-                  "rel": "noopener noreferrer",
-                  "target": "_blank",
-                },
-                "ref": null,
-                "rendered": Array [
-                  "Learn React",
-                ],
-                "type": "a",
               },
               Object {
                 "instance": <button>
@@ -361,21 +236,6 @@ ReactWrapper {
               <h1>
                 welcome.toReact
               </h1>
-              <p>
-                Edit 
-                <code>
-                  src/App.js
-                </code>
-                 and save to reload.
-              </p>
-              <a
-                class="App-link"
-                href="https://reactjs.org"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                Learn React
-              </a>
               <button>
                 Language: EN
               </button>
@@ -398,21 +258,6 @@ ReactWrapper {
               <h1>
                 welcome.toReact
               </h1>
-              <p>
-                Edit 
-                <code>
-                  src/App.js
-                </code>
-                 and save to reload.
-              </p>
-              <a
-                className="App-link"
-                href="https://reactjs.org"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                Learn React
-              </a>
               <button
                 onClick={[Function]}
               >
@@ -440,21 +285,6 @@ ReactWrapper {
                 <h1>
                   welcome.toReact
                 </h1>
-                <p>
-                  Edit 
-                  <code>
-                    src/App.js
-                  </code>
-                   and save to reload.
-                </p>
-                <a
-                  class="App-link"
-                  href="https://reactjs.org"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
-                  Learn React
-                </a>
                 <button>
                   Language: EN
                 </button>
@@ -474,21 +304,6 @@ ReactWrapper {
                   <h1>
                     welcome.toReact
                   </h1>,
-                  <p>
-                    Edit 
-                    <code>
-                      src/App.js
-                    </code>
-                     and save to reload.
-                  </p>,
-                  <a
-                    className="App-link"
-                    href="https://reactjs.org"
-                    rel="noopener noreferrer"
-                    target="_blank"
-                  >
-                    Learn React
-                  </a>,
                   <button
                     onClick={[Function]}
                   >
@@ -537,71 +352,6 @@ ReactWrapper {
                     "welcome.toReact",
                   ],
                   "type": "h1",
-                },
-                Object {
-                  "instance": <p>
-                    Edit 
-                    <code>
-                      src/App.js
-                    </code>
-                     and save to reload.
-                  </p>,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": Array [
-                      "Edit ",
-                      <code>
-                        src/App.js
-                      </code>,
-                      " and save to reload.",
-                    ],
-                  },
-                  "ref": null,
-                  "rendered": Array [
-                    "Edit ",
-                    Object {
-                      "instance": <code>
-                        src/App.js
-                      </code>,
-                      "key": undefined,
-                      "nodeType": "host",
-                      "props": Object {
-                        "children": "src/App.js",
-                      },
-                      "ref": null,
-                      "rendered": Array [
-                        "src/App.js",
-                      ],
-                      "type": "code",
-                    },
-                    " and save to reload.",
-                  ],
-                  "type": "p",
-                },
-                Object {
-                  "instance": <a
-                    class="App-link"
-                    href="https://reactjs.org"
-                    rel="noopener noreferrer"
-                    target="_blank"
-                  >
-                    Learn React
-                  </a>,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": "Learn React",
-                    "className": "App-link",
-                    "href": "https://reactjs.org",
-                    "rel": "noopener noreferrer",
-                    "target": "_blank",
-                  },
-                  "ref": null,
-                  "rendered": Array [
-                    "Learn React",
-                  ],
-                  "type": "a",
                 },
                 Object {
                   "instance": <button>

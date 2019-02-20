@@ -1,5 +1,4 @@
 {
-  "welcome": {
-    "toReact": "Bienvenue {name} à React!"
-  }
+  "welcome.toReact": "Bienvenue à React, {name} !",
+  "this.is.a.test": "C'est un test, {name} !"
 }

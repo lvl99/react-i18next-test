@@ -1,5 +1,6 @@
 import React, { useState, useCallback, useEffect } from "react";
 import { useTranslation } from "react-i18next";
+import Changer from "./Changer";
 import logo from "./logo.svg";
 import "./App.css";
 
@@ -29,18 +30,13 @@ export default function App({ language }) {
         <img src={logo} className="App-logo" alt="logo" />
         <h1>{t("welcome.toReact", { name: "Test" })}</h1>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          App language: {lng}
+          <br />
+          i18n currentLanguage: {i18n.language}
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
         <button onClick={() => handleLanguageChange("en")}>Language: EN</button>
         <button onClick={() => handleLanguageChange("fr")}>Language: FR</button>
+        <Changer language={lng} />
       </header>
     </div>
   );
