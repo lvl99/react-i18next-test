@@ -71,6 +71,7 @@ i18next
     ns: ["translation"],
     defaultNS: "translation",
     debug: process.env.NODE_ENV === "development",
+    keySeparator: false,
     interpolation: {
       escapeValue: false
     },
